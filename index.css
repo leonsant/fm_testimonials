@@ -1,0 +1,202 @@
+/* 
+These styles were used to signal borders while creating the design
+.testimonial {
+    border: 1px solid black;
+}
+
+div, h2, h3, h4, h5 {
+    border: 1px solid black;
+}
+*/
+
+/* CSS header reset */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(213, 39%, 95%);
+  font-size: 13px;
+  @media (min-width: 1440px) {
+    /* With both the height and align-items, in desktop mode, the testimonials appears in the center */
+    align-items: center;
+    height: 95vh;
+  }
+}
+
+h2 {
+  font-size: 0.85em;
+}
+
+h3 {
+  padding-top: 14px;
+  font-size: 1.256em;
+}
+
+h4 {
+  padding-top: 14px;
+  font-size: 0.85em;
+  line-height: 1.3em;
+}
+
+img {
+  border-radius: 50%;
+  width: 25px;
+  align-self: center;
+  margin-right: 12px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  width: 296px;
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "t1 t1 t2 t5"
+      "t3 t4 t4 t5";
+    flex-direction: row;
+    width: 1000px;
+    height: 450px;
+  }
+}
+
+.testimonial {
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 31px;
+  padding-right: 31px;
+  border-radius: 2%;
+  box-shadow: 20px 30px 40px hsl(220, 25%, 85%);
+}
+
+.witness {
+  display: flex;
+  flex-direction: row;
+}
+
+.witness_info {
+  align-self: center;
+}
+
+#testimonial1 {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: top right 20px;
+  background-color: hsl(263, 55%, 52%);
+  img {
+    border: 2px solid hsl(263, 55%, 52%, 70%);
+    background-color: white;
+  }
+  h2 {
+    color: hsl(213, 39%, 95%, 75%);
+  }
+  h3 {
+    color: hsl(213, 39%, 95%, 90%);
+  }
+  h4 {
+    color: hsl(263, 61%, 70%);
+  }  
+  h5 {
+    color: hsl(263, 61%, 70%);
+  }
+  @media (min-width: 1440px) {
+    grid-area: t1;
+  }
+}
+
+#testimonial2 {
+  background-color: hsl(217, 19%, 35%);
+  h2 {
+    color: hsl(213, 39%, 95%, 75%);
+  }
+  h3 {
+    color: hsl(213, 39%, 95%, 90%);
+  }
+  h4 {
+    color: hsl(218, 17.86%, 69%);
+  }
+  h5 {
+    color: hsl(0, 0%, 81%, 50%);
+  }
+  @media (min-width: 1440px) {
+    grid-area: t2;
+    flex-basis: 25.5%;
+  }
+}
+
+#testimonial3,
+#testimonial5 {
+  background-color: white;
+  h2 {
+    color: hsl(217, 19%, 35%, 70%);
+  }
+  h3 {
+    color: hsl(217, 19%, 35%);
+  }
+  h4 {
+    color: hsl(217, 19%, 35%, 50%);
+  }
+  h5 {
+    color: hsl(217, 19%, 35%, 35%);
+  }
+}
+
+#testimonial3 {
+  @media (min-width: 1440px) {
+    grid-area: t3;
+  }
+}
+
+#testimonial4 {
+  background-color: hsl(0, 0%, 12%);
+  img {
+    border: 2px solid hsl(263, 55%, 52%, 70%);
+  }
+  h2 {
+    color: hsl(215, 46%, 87%, 90%);
+  }
+  h3 {
+    color: hsl(215, 46%, 87%);
+  }
+  h4 {
+    color: hsl(215, 46%, 87%, 58%);
+  }
+  h5 {
+    color: hsl(215, 46%, 87%, 45%);
+  }
+  @media (min-width: 1440px) {
+    grid-area: t4;
+  }
+}
+
+#testimonial5 {
+  @media (min-width: 1440px) {
+    grid-area: t5;
+  }
+}
+
+/* 
+These styles would add a border to all images
+Later I've decided to follow the original design
+
+#testimonial2 img {
+    border: 2px solid hsl(0, 0%, 81%, 50%);
+}
+
+#testimonial3 img, #testimonial5 img {
+    border: 2px solid hsl(217, 19%, 35%, 35%);
+}
+*/
