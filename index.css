@@ -96,20 +96,20 @@ img {
   background-repeat: no-repeat;
   background-position: top right 20px;
   background-color: hsl(263, 55%, 52%);
-  img {
+  & img {
     border: 2px solid hsl(263, 55%, 52%, 70%);
     background-color: white;
   }
-  h2 {
+  & h2 {
     color: hsl(213, 39%, 95%, 75%);
   }
-  h3 {
+  & h3 {
     color: hsl(213, 39%, 95%, 90%);
   }
-  h4 {
+  & h4 {
     color: hsl(263, 61%, 70%);
   }  
-  h5 {
+  & h5 {
     color: hsl(263, 61%, 70%);
   }
   @media (min-width: 1440px) {
@@ -119,37 +119,36 @@ img {
 
 #testimonial2 {
   background-color: hsl(217, 19%, 35%);
-  h2 {
+  & h2 {
     color: hsl(213, 39%, 95%, 75%);
   }
-  h3 {
+  & h3 {
     color: hsl(213, 39%, 95%, 90%);
   }
-  h4 {
+  & h4 {
     color: hsl(218, 17.86%, 69%);
   }
-  h5 {
+  & h5 {
     color: hsl(0, 0%, 81%, 50%);
   }
   @media (min-width: 1440px) {
     grid-area: t2;
-    flex-basis: 25.5%;
   }
 }
 
 #testimonial3,
 #testimonial5 {
   background-color: white;
-  h2 {
+  & h2 {
     color: hsl(217, 19%, 35%, 70%);
   }
-  h3 {
+  & h3 {
     color: hsl(217, 19%, 35%);
   }
-  h4 {
+  & h4 {
     color: hsl(217, 19%, 35%, 50%);
   }
-  h5 {
+  & h5 {
     color: hsl(217, 19%, 35%, 35%);
   }
 }
@@ -162,19 +161,19 @@ img {
 
 #testimonial4 {
   background-color: hsl(0, 0%, 12%);
-  img {
+  & img {
     border: 2px solid hsl(263, 55%, 52%, 70%);
   }
-  h2 {
+  & h2 {
     color: hsl(215, 46%, 87%, 90%);
   }
-  h3 {
+  & h3 {
     color: hsl(215, 46%, 87%);
   }
-  h4 {
+  & h4 {
     color: hsl(215, 46%, 87%, 58%);
   }
-  h5 {
+  & h5 {
     color: hsl(215, 46%, 87%, 45%);
   }
   @media (min-width: 1440px) {
