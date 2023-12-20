@@ -48,6 +48,9 @@ h4 {
 
 img {
   border-radius: 50%;
+  /* Adding height just for the case when the image is not loaded */
+  /* it still occupies only that 25x25 area */
+  height: 25px;
   width: 25px;
   align-self: center;
   margin-right: 12px;
